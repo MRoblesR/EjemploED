@@ -19,10 +19,6 @@ begin
   for i := 1 to 100 do
   begin
     suma := suma + numeros[i];
-    
-    // BUG: en la iteración 50, restamos en vez de sumar
-    if i = 50 then
-      suma := suma - (numeros[i] * 2);
   end;
   
   WriteLn('Suma total: ', suma);
